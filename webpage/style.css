@@ -1,0 +1,66 @@
+.container {
+  height: 100vh;
+  display: flex !important;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+path {
+  transition: fill 0.13s;
+}
+
+path:hover {
+  fill: #f89924;
+}
+
+#map-wrapper {
+  display: flex !important;
+  justify-content: center;
+}
+
+#pointer {
+  cursor: pointer;
+}
+
+#path-modal {
+  position: absolute;
+  align-items: center;
+  z-index: 2;
+  top: 20%;
+  margin: 0 auto;
+  height: 550px;
+  width: 450px;
+  text-align: center;
+  display: none;
+}
+
+#path-modal img {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  fill: #f8ca24;
+}
+
+#close-modal-btn {
+  left: 100%;
+  position: absolute;
+  padding: 0;
+  width: 25px;
+}
+
+#close-modal-btn span {
+  color: white;
+}
+
+#mask {
+  position: absolute;
+  z-index: 1;
+  background: black;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  display: none;
+}

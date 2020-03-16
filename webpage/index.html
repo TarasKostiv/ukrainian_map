@@ -13,10 +13,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Mask -->
+    <div id="mask"></div>
+
     <div class="container">
       <!-- Map -->
       <div id="map-wrapper">
-        <!-- <img src="./img/ua-svg-svg.svg" alt="ukraine-map" id="map" /> -->
+        <!-- Path-modal -->
+        <div id="path-modal">
+          <button id="close-modal-btn" class="btn" onclick="pathModal(false);">
+            <span>&times;</span>
+          </button>
+          <img src="./img/region/chernivci.svg" alt="" id="fill-1-img" clas />
+          <img src="./img/region/ivanoFrankivsk.svg" alt="" id="fill-2-img" />
+          <img src="./img/region/ternopil.svg" alt="" id="fill-3-img" />
+          <img src="./img/region/volyn.svg" alt="" id="fill-4-img" />
+          <img src="./img/region/zakarpattia.svg" alt="" id="fill-5-img" />
+          <img src="./img/region/lviv.svg" id="fill-6-img" alt="" />
+        </div>
+
+        <!-- Svg picture -->
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 531 359"
@@ -304,126 +320,90 @@
               d="M203.06,190.08l3.37,-0.37l2.99,2.91l3.69,0.43l2.79,-2.53l1.62,2.38l4.74,-0.27l0.45,-3.87l3.86,-1.23l2.94,1.47l3.03,-1.1l-0.92,-2.1l-5.59,-4.11l3.26,-3.35l2.61,1.92l2.1,-2.53l-1.52,-1.32l-0.24,-4.33l0.07,-3.31l-3.13,-0.23l-0.47,-4.1l-2.66,-0.07l-1.02,-3.92l-0.65,-3.84l-1.96,-0.57l0.42,-3.09l-1.7,0.56l-0.49,-3.66l4.13,-3.04l-0.21,-4.16l-6.73,-5.77l2.38,-2.46l0.06,-1.67l-1.01,-1.1l1.01,-2.09l-2.05,-2.22l2.44,-2.02l-1.11,-0.92l-3.14,-0.15l-4.57,2.63h-6.8l-2.55,-3.92l0.88,-4.21l-0.7,-4.92l-2.84,0.39l-2.87,2.8l-3.9,0.41l-4.03,-1.56l-2.73,2.66l-3.15,-1.54l-4.08,1.14l-4.96,-0.08l-2.94,1.03l-2.07,2.01l1.06,1.71l-0.43,2.3l-0.94,3.39l-0.99,1.7l2.71,5.13l0.95,6.25l-0.34,3.81l-3.5,1.53l-3.43,-2.66l-2.28,1.78l-2.26,0.68l-2.55,3.79l0.31,11.7l-2.86,5.1l2.32,-0.06l2.44,3.11l1.32,4.23l3.26,2.45l4.01,-0.45l4.64,5.53l3.96,0.23v3.31l6.62,0.64l4.04,5.95l3.3,-2.27l7.01,1.4l1.6,4.57l0.15,0.22l3.72,-2.2l0.16,-3.86"
             />
           </g>
-          <!-- <use id="" href="#img1" transform="matrix(0.05,0,0,0.05,41,95)" />
           <use
+            onclick="pathModal(true, 'lviv');"
             id="pointer"
-            href="#img2"
-            transform="matrix(0.05,0,0,0.05,225,214)"
+            href="#img1"
+            transform="matrix(0.05,0,0,0.05,41,95)"
           />
+
           <use
-            id="pointer"
-            href="#img3"
-            transform="matrix(0.05,0,0,0.05,181,141)"
-          />
-          <use
-            id="pointer"
-            href="#img4"
-            transform="matrix(0.05,0,0,0.05,134,112)"
-          />
-          <use
+            onclick="pathModal(true, 'ivanoFrankivsk');"
             id="pointer"
             href="#img5"
-            transform="matrix(0.05,0,0,0.05,60,145)"
+            transform="matrix(0.05,0,0,0.05,63,145)"
           />
+
           <use
+            onclick="pathModal(true, 'ternopil');"
             id="pointer"
             href="#img6"
             transform="matrix(0.05,0,0,0.05,92,116)"
           />
+
           <use
+            onclick="pathModal(true, 'chernivci');"
             id="pointer"
             href="#img7"
-            transform="matrix(0.05,0,0,0.05,99,167)"
+            transform="matrix(0.05,0,0,0.05,99,160)"
           />
+
           <use
-            id="pointer"
-            href="#img8"
-            transform="matrix(0.05,0,0,0.05,289,161)"
-          />
-          <use
-            id="pointer"
-            href="#img9"
-            transform="matrix(0.05,0,0,0.05,265,125)"
-          />
-          <use
-            id="pointer"
-            href="#img10"
-            transform="matrix(0.05,0,0,0.05,176,62)"
-          />
-          <use
-            id="pointer"
-            href="#img11"
-            transform="matrix(0.05,0,0,0.05,124,41)"
-          />
-          <use
+            onclick="pathModal(true, 'volyn') ;"
             id="pointer"
             href="#img12"
             transform="matrix(0.05,0,0,0.05,77,32)"
           />
+
           <use
-            id="pointer"
-            href="#img13"
-            transform="matrix(0.05,0,0,0.05,277,35)"
-          />
-          <use
-            id="pointer"
-            href="#img14"
-            transform="matrix(0.05,0,0,0.05,278,212)"
-          />
-          <use
-            id="pointer"
-            href="#img15"
-            transform="matrix(0.05,0,0,0.05,365,154)"
-          />
-          <use
-            id="pointer"
-            href="#img16"
-            transform="matrix(0.05,0,0,0.05,332,103)"
-          />
-          <use
-            id="pointer"
-            href="#img17"
-            transform="matrix(0.05,0,0,0.05,417,104)"
-          />
-          <use
-            id="pointer"
-            href="#img18"
-            transform="matrix(0.05,0,0,0.05,394,208)"
-          />
-          <use
+            onclick="pathModal(true, 'zakarpattia');"
             id="pointer"
             href="#img19"
-            transform="matrix(0.05,0,0,0.05,20,150)"
+            transform="matrix(0.05,0,0,0.05,24,155)"
           />
-          <use
-            id="pointer"
-            href="#img20"
-            transform="matrix(0.05,0,0,0.05,332,236)"
-          />
-          <use
-            id="pointer"
-            href="#img21"
-            transform="matrix(0.05,0,0,0.05,450,173)"
-          />
-          <use
-            id="pointer"
-            href="#img22"
-            transform="matrix(0.05,0,0,0.05,486,126)"
-          />
-          <use
-            id="pointer"
-            href="#img23"
-            transform="matrix(0.05,0,0,0.05,335,41)"
-          />
-          <use
-            id="pointer"
-            href="#img24"
-            transform="matrix(0.05,0,0,0.05,240.75,87)"
-          /> -->
         </svg>
-        <!-- <div class="path-modal" id="path-10-modal">
-          <img src="" id="fill-10-img" alt="" />
-        </div> -->
+      </div>
+
+      <!-- Modal window -->
+      <div
+        class="modal fade bd-example-modal-xl"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">
+                Modal title
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- My js docm -->
