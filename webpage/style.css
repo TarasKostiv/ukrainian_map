@@ -19,7 +19,7 @@ path:hover {
   justify-content: center;
 }
 
-#pointer {
+.map-pointers {
   cursor: pointer;
 }
 

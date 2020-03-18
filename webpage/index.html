@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="shortcut icon" href="./img/map.svg" type="image/svg" />
+    <title>Ukrainian map</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -11,6 +12,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.js"
+      integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Mask -->
@@ -321,43 +328,49 @@
             />
           </g>
           <use
+            class="map-pointers"
             onclick="pathModal(true, 'lviv');"
-            id="pointer"
+            id="pointer1"
             href="#img1"
             transform="matrix(0.05,0,0,0.05,41,95)"
           />
 
           <use
+            class="map-pointers"
             onclick="pathModal(true, 'ivanoFrankivsk');"
-            id="pointer"
+            id="pointer2"
             href="#img5"
             transform="matrix(0.05,0,0,0.05,63,145)"
           />
 
           <use
+            class="map-pointers"
             onclick="pathModal(true, 'ternopil');"
-            id="pointer"
+            id="pointer3"
             href="#img6"
             transform="matrix(0.05,0,0,0.05,92,116)"
           />
 
           <use
+            class="map-pointers"
             onclick="pathModal(true, 'chernivci');"
-            id="pointer"
+            id="pointer4"
             href="#img7"
             transform="matrix(0.05,0,0,0.05,99,160)"
           />
 
           <use
+            class="map-pointers"
             onclick="pathModal(true, 'volyn') ;"
-            id="pointer"
+            id="pointer5"
             href="#img12"
             transform="matrix(0.05,0,0,0.05,77,32)"
           />
 
           <use
+            class="map-pointers"
             onclick="pathModal(true, 'zakarpattia');"
-            id="pointer"
+            id="pointer6"
             href="#img19"
             transform="matrix(0.05,0,0,0.05,24,155)"
           />
@@ -424,5 +437,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+
+    <script></script>
   </body>
 </html>
