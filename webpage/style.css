@@ -49,10 +49,12 @@ path:hover {
   position: absolute;
   padding: 0;
   width: 25px;
+  height: 25px;
 }
 
-#close-modal-btn span {
-  color: white;
+#close-modal-btn i {
+  height: 25px;
+  width: 25px;
 }
 
 #mask {

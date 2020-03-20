@@ -67,6 +67,17 @@ document.onkeydown = function(evt) {
   }
 };
 
+// Hide mask
+$("#mask").click(function() {
+  $("#mask").css("display", "none");
+  document.getElementById("fill-1-img").style.cssText = "display: none;";
+  document.getElementById("fill-2-img").style.cssText = "display: none;";
+  document.getElementById("fill-3-img").style.cssText = "display: none;";
+  document.getElementById("fill-4-img").style.cssText = "display: none;";
+  document.getElementById("fill-5-img").style.cssText = "display: none;";
+  document.getElementById("fill-6-img").style.cssText = "display: none;";
+});
+
 // Pointer1 animation
 $("#pointer1").mouseover(function() {
   $("#Fill-10").css("fill", "#f89924");

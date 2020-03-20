@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./img/map.svg" type="image/svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+    />
     <title>Ukrainian map</title>
     <link
       rel="stylesheet"
@@ -28,10 +32,12 @@
       <div id="map-wrapper">
         <!-- Path-modal -->
         <div id="path-modal">
-          <button id="close-modal-btn" class="btn" onclick="pathModal(false);">
-            <span>&times;</span>
+            <i class="fas fa-times"></i>
           </button>
-          <img src="./img/region/chernivci.svg" alt="" id="fill-1-img" clas />
+          <!-- chernivci -->
+          <img src="./img/region/chernivci.svg" alt="" id="fill-1-img" />
+          <img src="./img/pointer.svg" class="region-pointer" alt="" />
+
           <img src="./img/region/ivanoFrankivsk.svg" alt="" id="fill-2-img" />
           <img src="./img/region/ternopil.svg" alt="" id="fill-3-img" />
           <img src="./img/region/volyn.svg" alt="" id="fill-4-img" />
