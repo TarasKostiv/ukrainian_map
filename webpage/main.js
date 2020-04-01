@@ -1,9 +1,12 @@
 console.log("code connected");
-
-function test() {
-  console.log("good");
-}
-
+//
+let chernivci = document.getElementById("chernivci");
+let ivanoFrankivsk = document.getElementById("ivanoFrankivsk");
+let ternopil = document.getElementById("ternopil");
+let volyn = document.getElementById("volyn");
+let zakarpattia = document.getElementById("zakarpattia");
+let lviv = document.getElementById("lviv");
+//
 let mask = document.getElementById("mask");
 let modal = document.getElementById("path-modal");
 
@@ -15,40 +18,34 @@ function pathModal(isModalOn, region) {
       modal.style.cssText = "display: block";
       switch (region) {
         case "chernivci":
-          document.getElementById("fill-1-img").style.cssText =
-            "display: block;";
+          chernivci.style.cssText = "display: block;";
           break;
         case "ivanoFrankivsk":
-          document.getElementById("fill-2-img").style.cssText =
-            "display: block;";
+          ivanoFrankivsk.style.cssText = "display: block;";
           break;
         case "ternopil":
-          document.getElementById("fill-3-img").style.cssText =
-            "display: block;";
+          ternopil.style.cssText = "display: block;";
           break;
         case "volyn":
-          document.getElementById("fill-4-img").style.cssText =
-            "display: block;";
+          volyn.style.cssText = "display: block;";
           break;
         case "zakarpattia":
-          document.getElementById("fill-5-img").style.cssText =
-            "display: block;";
+          zakarpattia.style.cssText = "display: block;";
           break;
         case "lviv":
-          document.getElementById("fill-6-img").style.cssText =
-            "display: block;";
+          lviv.style.cssText = "display: block;";
           break;
       }
       break;
     case false:
       mask.style.cssText = "display: none";
       modal.style.cssText = "display: none";
-      document.getElementById("fill-1-img").style.cssText = "display: none;";
-      document.getElementById("fill-2-img").style.cssText = "display: none;";
-      document.getElementById("fill-3-img").style.cssText = "display: none;";
-      document.getElementById("fill-4-img").style.cssText = "display: none;";
-      document.getElementById("fill-5-img").style.cssText = "display: none;";
-      document.getElementById("fill-6-img").style.cssText = "display: none;";
+      lviv.style.cssText = "display: none;";
+      chernivci.style.cssText = "display: none;";
+      ivanoFrankivsk.style.cssText = "display: none;";
+      volyn.style.cssText = "display: none;";
+      zakarpattia.style.cssText = "display: none;";
+      ternopil.style.cssText = "display: none;";
       break;
   }
 }
@@ -58,24 +55,25 @@ document.onkeydown = function(evt) {
   if (evt.keyCode == 27) {
     mask.style.cssText = "display: none";
     modal.style.cssText = "display: none";
-    document.getElementById("fill-1-img").style.cssText = "display: none;";
-    document.getElementById("fill-2-img").style.cssText = "display: none;";
-    document.getElementById("fill-3-img").style.cssText = "display: none;";
-    document.getElementById("fill-4-img").style.cssText = "display: none;";
-    document.getElementById("fill-5-img").style.cssText = "display: none;";
-    document.getElementById("fill-6-img").style.cssText = "display: none;";
+    lviv.style.cssText = "display: none;";
+    chernivci.style.cssText = "display: none;";
+    ivanoFrankivsk.style.cssText = "display: none;";
+    volyn.style.cssText = "display: none;";
+    zakarpattia.style.cssText = "display: none;";
+    ternopil.style.cssText = "display: none;";
   }
 };
 
 // Hide mask
 $("#mask").click(function() {
-  $("#mask").css("display", "none");
-  document.getElementById("fill-1-img").style.cssText = "display: none;";
-  document.getElementById("fill-2-img").style.cssText = "display: none;";
-  document.getElementById("fill-3-img").style.cssText = "display: none;";
-  document.getElementById("fill-4-img").style.cssText = "display: none;";
-  document.getElementById("fill-5-img").style.cssText = "display: none;";
-  document.getElementById("fill-6-img").style.cssText = "display: none;";
+  mask.style.cssText = "display: none";
+  modal.style.cssText = "display: none";
+  lviv.style.cssText = "display: none;";
+  chernivci.style.cssText = "display: none;";
+  ivanoFrankivsk.style.cssText = "display: none;";
+  volyn.style.cssText = "display: none;";
+  zakarpattia.style.cssText = "display: none;";
+  ternopil.style.cssText = "display: none;";
 });
 
 // Pointer1 animation
