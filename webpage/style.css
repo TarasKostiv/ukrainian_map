@@ -1,12 +1,24 @@
 .container {
   height: 100vh;
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
   display: flex !important;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
 }
 
 path {
+  -webkit-transition: fill 0.13s;
+  -o-transition: fill 0.13s;
   transition: fill 0.13s;
 }
 
@@ -15,7 +27,17 @@ path:hover {
 }
 
 #map-wrapper {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
   display: flex !important;
+
+  -webkit-box-pack: center;
+
+  -webkit-justify-content: center;
+
+  -ms-flex-pack: center;
+
   justify-content: center;
 }
 
@@ -25,6 +47,9 @@ path:hover {
 
 #path-modal {
   position: absolute;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   z-index: 2;
   top: 20%;
@@ -90,10 +115,16 @@ path:hover {
   background: none;
   border: none;
 
+  -webkit-transition: all 0.17s;
+
+  -o-transition: all 0.17s;
+
   transition: all 0.17s;
 }
 
 .path-modal-content:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -128,6 +159,8 @@ path:hover {
   width: auto;
   position: relative;
   z-index: 5;
+  -webkit-transition: all 0.17s;
+  -o-transition: all 0.17s;
   transition: all 0.17s;
   cursor: pointer;
 }
@@ -138,6 +171,8 @@ path:hover {
 #volyn-pointer:hover,
 #zakarpattia-pointer:hover,
 #lviv-pointer:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
