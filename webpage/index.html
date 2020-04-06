@@ -46,19 +46,55 @@
           </div>
           <div class="region-block" id="ivanoFrankivsk">
             <div class="path-modal-content" id="ivanoFrankivsk-path-modal">
-              <img src="./img/pointer.svg" id="ivanoFrankivsk-pointer" alt="" />
+              <img
+                src="./img/pointer.svg"
+                id="ivanoFrankivsk-pointer"
+                alt=""
+                data-toggle="modal"
+                data-target="#ivanoFrankivsk-modal"
+              />
               <p>Івано-Франківськ</p>
             </div>
             <img src="./img/region/ivanoFrankivsk.svg" alt="" id="fill-2-img" />
           </div>
           <div class="region-block" id="ternopil">
-            <img src="./img/pointer.svg" id="ternopil-pointer" alt="" />
+            <div class="path-modal-content" id="ternopil-path-modal">
+              <img
+                src="./img/pointer.svg"
+                id="ternopil-pointer"
+                alt=""
+                data-toggle="modal"
+                data-target="#ternopil-modal"
+              />
+              <p>Тернопіль</p>
+            </div>
+            <div class="path-modal-content" id="zbaraz-path-modal">
+              <img
+                src="./img/pointer.svg"
+                id="ternopil-pointer"
+                alt=""
+                data-toggle="modal"
+                data-target="#zbaraz-modal"
+              />
+              <p>Збаражський замок</p>
+            </div>
             <img src="./img/region/ternopil.svg" alt="" id="fill-3-img" />
           </div>
+
           <div class="region-block" id="volyn">
-            <img src="./img/pointer.svg" id="volyn-pointer" alt="" />
+            <div class="path-modal-content" id="lutsk-path-modal">
+              <img
+                src="./img/pointer.svg"
+                id="volyn-pointer"
+                alt=""
+                data-toggle="modal"
+                data-target="#lutsk-modal"
+              />
+              <p>Луцьк</p>
+            </div>
             <img src="./img/region/volyn.svg" alt="" id="fill-4-img" />
           </div>
+
           <div class="region-block" id="zakarpattia">
             <div class="path-modal-content" id="zakarpattia-path-modal">
               <img
@@ -70,16 +106,67 @@
               />
               <p>Мукачево</p>
             </div>
-
             <img src="./img/region/zakarpattia.svg" alt="" id="fill-5-img" />
           </div>
           <div class="region-block" id="lviv">
             <div class="path-modal-content" id="drogobych-path-modal">
-              <img src="./img/pointer.svg" id="lviv-pointer" alt="" />
+              <img
+                src="./img/pointer.svg"
+                id="lviv-pointer"
+                alt=""
+                data-toggle="modal"
+                data-target="#drogobych-modal"
+              />
               <p>Дрогобич</p>
             </div>
-
+            <div class="path-modal-content" id="zovkva-path-modal">
+              <img
+                src="./img/pointer.svg"
+                id="lviv-pointer"
+                alt=""
+                data-toggle="modal"
+                data-target="#zovkva-modal"
+              />
+              <p>Жовква</p>
+            </div>
+            <div
+              class="path-modal-content"
+              id="pidhirtsi-and-olesko-castles-path-modal"
+            >
+              <img
+                src="./img/pointer.svg"
+                id="lviv-pointer"
+                alt=""
+                data-toggle="modal"
+                data-target="#pidhirtsi-and-olesko-castles-modal"
+              />
+              <p>Підгорецький і Олеський замки</p>
+            </div>
+            <div class="path-modal-content" id="sambir-path-modal">
+              <img
+                src="./img/pointer.svg"
+                id="lviv-pointer"
+                alt=""
+                data-toggle="modal"
+                data-target="#sambir-modal"
+              />
+              <p>Самбір</p>
+            </div>
             <img src="./img/region/lviv.svg" id="fill-6-img" alt="" />
+          </div>
+
+          <div class="region-block" id="rivne">
+            <div class="path-modal-content" id="tarakan-fort-path-modal">
+              <img
+                src="./img/pointer.svg"
+                id="lviv-pointer"
+                alt=""
+                data-toggle="modal"
+                data-target="#tarakan-fort-modal"
+              />
+              <p>Тараканівський форт</p>
+            </div>
+            <img src="./img/region/rivne.svg" id="fill-7-img" alt="" />
           </div>
         </div>
 
@@ -381,7 +468,7 @@
 
           <use
             class="map-pointer"
-            onclick="pathModal(true, 'ivanoFrankivsk');"
+            onclick="pathModal(true, 'ivanoFrankivsk'); "
             id="pointer2"
             href="#img5"
             transform="matrix(0.05,0,0,0.05,63,145)"
@@ -418,10 +505,167 @@
             href="#img19"
             transform="matrix(0.05,0,0,0.05,24,155)"
           />
+
+          <use
+            class="map-pointer"
+            onclick="pathModal(true, 'rivne') ;"
+            id="pointer7"
+            href="#img20"
+            transform="matrix(0.05,0,0,0.05,125,45)"
+          />
         </svg>
       </div>
 
       <!-- Modal window -->
+
+      <div
+        class="modal fade bd-example-modal-xl"
+        id="chernivci-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">
+                Чернівці (8.2)
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Закрити
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade bd-example-modal-xl"
+        id="ivanoFrankivsk-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">
+                Тернопіль (8.1)
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Закрити
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade bd-example-modal-xl"
+        id="zbaraz-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">
+                Збаражський замок (7.2)
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Закрити
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade bd-example-modal-xl"
+        id="lutsk-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">
+                Луцьк, Замок Любарта (3.1, 3.2)
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Закрити
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div
         class="modal fade bd-example-modal-xl"
         id="zakarpattia-modal"
@@ -445,108 +689,81 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
-              <p>
-                День перший. 8.00год. і ми вирушаємо у нашу мандрівку. Після
-                2.30 год. їзди і ми у Верхній Грабівниці. У самому серці Карпат
-                розташований грандіозний бункер, що є найбільш збереженим та
-                цікавим об’єктом суперпотужної колись оборонної лінії Арпада,
-                яка будувалася угорською армією в 1943-1944рр. для захисту від
-                радянської армії. Ми пройшли по гігантському
-                півторакілометровому тунелю з боковими відгалуженнями,
-                вентиляційними шахтами, та відчули себе справжнім
-                мілітарі-туристами. Наступна наша зупинка - палац графів
-                Шенборнів. Нас зустрів неймовірно романтичний, оточений гарним
-                парком з багатьма екзотичними рослинами - палац. Це була казка.
-                На годиннику 13.30 год., а у нас смачнющий обід...Рухаємося
-                Закарпаттям і як не вивчити угорської говірки...
-                &quot;цімбор&quot; - друг, &quot;цімборульки&quot; - подруги,
-                &quot;айно&quot; - так, &quot;харити&quot; - прибирати а
-                &quot;никати&quot; - це ховати, &quot;йо&quot; - так...
-                <img
-                  src="./img/IMG-3310c0dfa6f691b7494dd759f706c8df-V.jpg"
-                  style="float: left; width: 40%; margin: 10px; border-radius: 4px;"
-                  alt=""
-                />
-                Вивчивши угорської говірки вирушаємо у Чинадієво. Посеред
-                старовинного містечка Сент-Міклош нас зустрічає похмурий
-                середньовічний замок князя Ракоці(XIV ст.), з цікавим
-                інтер’єром, потаємним ходом та спальнею мужньої Ілони Зріні, в
-                якій вона зустрічалася з графом Імре Текелі, через це його ще
-                називають «Замок кохання». Трохи втомлені, але ми вирушаємо в
-                Мукачево. Звідки б Ви не наближалися до Мукачево, за десятки
-                кілометрів, на одинокій гостроверхій сопці, як магніт, Вас
-                притягує овіяний легендами і бойовою славою мукачівський замок
-                “Паланок” (XIV ст.). Цей визначний воєнно-архітектурний
-                пам&#39;ятник середньовіччя був збудований для охорони і
-                контролю торгових і військових шляхів. Деякі джерела
-                стверджують, що вже в ІХ-Х ст. на горі було невелике укріплення,
-                збудоване для охорони кордонів Київської Русі за Карпатами.
-                Спорудив замок руський князь Федір Корятович і перетворив його у
-                свою резиденцію. Замкові стіни пам’ятають свою захисницю Ілону
-                Зріні, що проявила дива мужності та героїзму при обороні замку.
-                Насичений екскурсіями день дався дітям нелегко - бажання
-                провести весело час було сильнішим за бажання послухати
-                екскурсію, хоч це було очікувано. &quot;Йо ештейт&quot; -
-                вітаємося на угорський манер з господарями в садибах і гайда
-                ласувати ташкот-левешем і торгонею. На годиннику 00.00 год. -
-                чемні діти &quot;позасинали&quot;. День другий. 8.00 год -
-                заледве, після &quot;міцного&quot; сну, добрели на сніданок -
-                лангош з варенням і теплий чай не допомогли прокинутись
-                остаточно. 10.00 год. - і ми в Ізі. У підніжжі Карпат
-                розташоване особисте селянське господарство “Бараново”, де всі
-                охочі продегустували різні сорти сиру: коров&#39;ячого і
-                овечого. Наступна зупинка- оленяча ферма, де живе понад сто
-                північних оленів. І хто на вашу думку склав нам компанію на
-                фермі, окрім оленів? - Зграйка овець і баранів, яка по
-                п&#39;ятах слідувала за нашою групою, випрошуючи смаколики :)
-                ... Cиневирський перевал: один із наймальовничіших перевалів
-                українських Карпат, який має висоту 793 метрів і з нього
-                відкриваються чудові панорами довколишніх гірських хребтів.
-                Після енної кількості селфі і фотографій рушили до
-                &quot;Морського ока&quot;, - так в народі називають озеро
-                Синевир. Для катання Синевиром на бОкорі краще було одіти чИжми,
-                же би не замочити бокОнчі - в перекладі це означає, що для
-                катання на плоті варта взувати ґумаки, а не мешти  Дощ, час і
-                голод підганяли нас до ресторану &quot;Колиба&quot; на гарячий
-                обід. Доки виносили страви, креативні і голодні діти з КМДШ,
-                вирішили зготувати собі тости на відкритому вогні Нашою
-                наступною зупинкою після ситного обіду був реабілітаційний центр
-                бурого ведмедя, створений для відтворення популяції ведмедів у
-                природньому середовищі існування. На площі 12 га зараз живе
-                близько двох десятків бурих ведмедів, які зазнали жорстокого
-                поводження в неволі чи потерпіли від стихійних лих. О 17.30 ми
-                прибули до Пилипця. Тут з висоти 15 метрів багатьма
-                заворожуючими каскадами між андезиновими скелями скидає води в
-                мальовничу гірську долину один з найкрасивіших водоспадів
-                України – водоспад Шипіт. Він бере свій початок з великого
-                підземного джерела, в одному з найгарніших місць українських
-                Карпат – полонині Боржава. На жаль, впродовж подорожі кілька раз
-                виникали конфлікти і суперечки щодо доцільності української
-                музики в салоні автобуса. Зрозуміло, що про смаки не
-                сперечаються, тим більше про сучасні музичні вподобання наших
-                дітей. Проте в рамках нашого проекту і хвилі &quot; Галопом по
-                Україні&quot; хотілося познайомити дітей з етнічною музикою
-                мадярів, ромів, а також показати, що й українська музика може
-                бути якісною і цікавою. Питання лишилося відкритим... ... Можна
-                ще багато розповідати про нашу мандрівку, але нехай це вже
-                зроблять діти.
-              </p>
-              <iframe
-                src="https://creativeschoolua-my.sharepoint.com/personal/t_kostiv_kmds_lviv_ua/_layouts/15/Doc.aspx?sourcedoc={dae36896-61ca-460a-bff2-e91400e729b5}&amp;action=embedview&amp;wdAr=1.7777777777777777"
-                width="962px"
-                height="565px"
-                frameborder="0"
-                style="max-height: 600px; width: 95%; margin-left: 2.5%;"
-                >This is an embedded
-                <a target="_blank" href="https://office.com"
-                  >Microsoft Office</a
-                >
-                presentation, powered by
-                <a target="_blank" href="https://office.com/webapps">Office</a
-                >.</iframe
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
               >
+                Закрити
+              </button>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade bd-example-modal-xl"
+        id="drogobych-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">
+                Дрогобич ()
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Закрити
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade bd-example-modal-xl"
+        id="zovkva-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">
+                Жовква ()
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body"></div>
             <div class="modal-footer">
               <button
                 type="button"
@@ -561,7 +778,7 @@
       </div>
       <div
         class="modal fade bd-example-modal-xl"
-        id="zakarpattia-modal"
+        id="pidhirtsi-and-olesko-castles-modal"
         tabindex="-1"
         role="dialog"
         aria-labelledby="myExtraLargeModalLabel"
@@ -571,7 +788,43 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalCenterTitle">
-                Закарпаття (4, 6.1, 9)
+                Підгорецький та Олеський замки ()
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Закрити
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade bd-example-modal-xl"
+        id="tarakan-fort-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">
+                Тараканівський форт ()
               </h5>
               <button
                 type="button"

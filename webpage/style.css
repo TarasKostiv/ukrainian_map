@@ -112,13 +112,11 @@ path:hover {
   z-index: 5;
   height: 70px;
   width: 70px;
+  font-size: 14px;
   background: none;
   border: none;
-
   -webkit-transition: all 0.17s;
-
   -o-transition: all 0.17s;
-
   transition: all 0.17s;
 }
 
@@ -147,6 +145,48 @@ path:hover {
 #drogobych-path-modal {
   left: 130px;
   top: 310px;
+}
+
+#zovkva-path-modal {
+  left: 197px;
+  top: 150px;
+}
+
+#pidhirtsi-and-olesko-castles-path-modal {
+  left: 300px;
+  top: 180px;
+  width: 150px;
+}
+
+#pidhirtsi-and-olesko-castles-path-modal p {
+  width: 150px;
+}
+
+#sambir-path-modal {
+  top: 255px;
+  left: 35px;
+}
+
+#lutsk-path-modal {
+  top: 350px;
+  left: 257px;
+}
+
+#tarakan-fort-path-modal {
+  width: 100px;
+  top: 372px;
+  left: 47px;
+}
+
+#ternopil-path-modal {
+  top: 167px;
+  left: 210px;
+}
+
+#zbaraz-path-modal {
+  width: 100px;
+  top: 130px;
+  left: 260px;
 }
 
 #chernivci-pointer,
