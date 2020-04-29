@@ -16,6 +16,29 @@
   position: relative;
 }
 
+video {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.img-right,
+.img-left {
+  height: auto;
+  border-radius: 4px;
+  margin-top: 7px;
+  margin-bottom: 0px;
+}
+
+.img-right {
+  float: right;
+  margin-left: 7px;
+}
+
+.img-left {
+  float: left;
+  margin-right: 7px;
+}
+
 path {
   -webkit-transition: fill 0.13s;
   -o-transition: fill 0.13s;
@@ -84,6 +107,34 @@ path:hover {
   fill: #f8ca24;
 }
 
+.modal-body {
+  text-align: center;
+}
+
+.modal-body .content-wrapper {
+  text-align: justify;
+}
+
+.modal-body h2:nth-child(1) {
+  margin-top: 0;
+}
+
+.modal-body h2 {
+  margin-top: 20px;
+}
+
+.modal-body .img-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-group > img {
+  margin: 3px;
+  border-radius: 4px;
+  width: calc(33.3333% - 6px);
+  height: auto;
+}
+
 #close-modal-btn {
   left: 100%;
   position: absolute;
@@ -138,8 +189,8 @@ path:hover {
 }
 
 #zakarpattia-path-modal {
-  left: 87px;
-  top: 240px;
+  left: 170px;
+  top: 250px;
 }
 
 #drogobych-path-modal {
@@ -218,4 +269,59 @@ path:hover {
 
 .bd-example-modal-xl {
   text-align: justify;
+}
+
+iframe {
+  width: 962px;
+  height: 565px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  iframe {
+    width: 766px;
+    height: 455px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  iframe {
+    width: 446px;
+    height: 275px;
+  }
+}
+
+.copyright {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright a {
+  text-decoration: none !important;
+  color: black !important;
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+.copyright a:hover {
+  text-decoration: none;
+  color: black !important;
+  opacity: 1;
+}
+
+.copyright a::after {
+  content: "";
+  transform: scale(0);
+  border: 0.7px solid black;
+  display: block;
+  transition: 0.2s;
+}
+
+.copyright a:hover::after {
+  content: "";
+  transform: scale(1);
+  border: 0.7px solid black;
+  display: block;
 }
